@@ -8,9 +8,24 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         
-        <title>trillo &mdash; Your all-in-one booking app</title>
+        <title>Thirty Beauty &mdash; Waxing & Eyelashes</title>
     </head>
     <body>
+        <div id="open-hours"></div>
+        <script src="./open-hours.js"></script>
+        <script>
+            const hours = {
+              "Monday":     { start: 1000, end: 1800 },
+              "Tuesday":    { start: 1400, end: 1800 },
+              "Wednesday":  { start: 1100, end: 1900 },
+              "Thursday":   { start: 1300, end: 1800 },
+              "Friday":     { start: 1000, end: 1700 },
+              "Saturday":   { start: 900, end: 1700 },
+              "Sunday":     {}
+            }
         
+            OpenHours.generateTime(hours)
+          </script>
+        <script src="./script.js"></script>
     </body>
 </html>
