@@ -114,6 +114,7 @@ table {
   padding-top: 0;
   color: var(--color-primary-light);
   font-size: 1.5rem;
+  font-weight: 700;
   border-spacing: 15px;
 }
 
@@ -127,6 +128,7 @@ tr:first-child {
 .location {
   margin-top: 1rem;
   font-size: 1.5rem;
+  font-weight: 700;
   border-radius: 5px;
   color: var(--color-primary-light);
   text-align: center;
@@ -145,6 +147,7 @@ tr:first-child {
 .contact {
   margin-top: 1rem;
   font-size: 1.5rem;
+  font-weight: 700;
   border-radius: 5px;
   color: var(--color-primary-light);
   text-align: center;
