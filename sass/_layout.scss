@@ -11,3 +11,19 @@
   width: 100vw;
   height: 8rem;
 }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+
+.background-cover {
+  position: fixed;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--section-background-color);
+  z-index: -1;
+}

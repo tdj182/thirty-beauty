@@ -18,11 +18,16 @@ Grey dark 3: #999
 
 :root {
   --color-primary: #c6ae94;
-  --color-primary-light: #eccca9;
+  --color-primary-light: #e9e1d9;
   --color-primary-dark: #947d64;
 
   --color-black: black;
   --color-white: white;
+
+  --section-background-color: rgba(0,0,0, .4);
+  --component-padding: .7rem 2rem;
+
+  --title-size: 3rem;
 }
 
 * {
@@ -42,7 +47,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   line-height: 1.6;
   background-image: url(/img/hero.jpg);

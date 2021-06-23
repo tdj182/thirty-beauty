@@ -1,4 +1,13 @@
 /////////////////////////////////////
+// TITLES
+.title {
+  font-size: 4rem;
+  color: var(--color-white);
+  text-align: center;
+  margin: 0 2rem;
+}
+
+/////////////////////////////////////
 // NAVBAR
 .navbar {
   display: flex;
@@ -16,6 +25,7 @@
     font-size: 3rem;
     color: var(--color-primary);
     font-family: Martel;
+    margin: 0 1rem;
   }
 
   &__list {
@@ -33,6 +43,12 @@
     font-family: "Montserrat";
     margin: 0 1rem;
     transition: all .5s;
+
+    a,
+    a:visited {
+      text-decoration: none;
+      color: var(--color-white);
+    }
 
     /* Fade in */
     &::after {
@@ -60,17 +76,72 @@
 }
 
 
+/////////////////////////////////////
+// HOURS
+.hours {
+  margin: 1rem;
+  // background-color: var(--section-background-color);
+  border-radius: 5px;
+}
+
+table {
+  // margin: 0 auto;
+  padding: var(--component-padding);
+  color: var(--color-primary-light);
+  font-size: 1.5rem;
+  border-spacing: 15px;
+}
+
+tr:first-child {
+  margin-right: 1rem;
+}
+
+
+/////////////////////////////////////
+// LOCATION
+.location {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  // background-color: var(--section-background-color);
+  color: var(--color-primary-light);
+  text-align: center;
+
+  &__text {
+    padding: var(--component-padding);
+  }
+
+  &__link {
+    background-color: #00aff0;
+  }
+}
+
+/////////////////////////////////////
+// CONTACT
+.contact {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  // background-color: var(--section-background-color);
+  color: var(--color-primary-light);
+  text-align: center;
+
+  &__text {
+    padding: var(--component-padding);
+  }
+}
+
 
 /////////////////////////////////////
 // SOCIALS
 .socials {
-  position: fixed;
-  right: 50%;
-  bottom: 0;
-  transform: translateX(50%);
+  // position: fixed;
+  // right: 0;
+  // bottom: 0;
+  // transform: translateX(50%);
 }
 
-.fab {
+.fab, .fas{
   font-size: 2rem;
   padding: 1rem;
   width: 4rem;

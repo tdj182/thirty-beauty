@@ -24,35 +24,61 @@
                     <a class="navbar__brand" href="#">Thirty Beauty</a>
                     <ul class="navbar__list">
                         <li class="navbar__link">Hours</li>
-                        <li class="navbar__link">Location</li>
+                        <li class="navbar__link"> <a href="https://m.place.naver.com/place/1236048581/location?subtab=location">Location</a></li>
                         <li class="navbar__link">Contact</li>
                     </ul>
                 </nav>
             </div>
         </header>
+
+        <div class="background-cover"></div>
+
         <div class="container">
-            <!-- SOCIALS -->
-            <div class="socials">
-                <a href="http://instagram.com/thirty_juju" class="socials__link fab fa-instagram socials__icon socials__icon-instagram">
-                    <i class=""></i>
-                </a>
-                <a href="https://m.place.naver.com/place/1236048581/home" class="socials__link fab fa-naver">
-                    N
-                </a>
-            </div>
-            <!-- HOURS -->
-            <div id="open-hours"></div>
+
+            <main class="main">
+                <!-- HOURS -->
+                <div id="open-hours" class="hours">
+                    <h3 class="hours__title title">Hours</h3>
+                </div>
+    
+                <!-- contact -->
+                <div class="location">
+                    <h3 class="location__title title">Location</h3>
+                    <p class="location__text">Room 511, 5th floor, 167 Shimin-daero, Dongan-gu, Anyang-si, Gyeonggi-do <a href="https://m.place.naver.com/place/1236048581/location?subtab=location" class="location__link fas fa-map-marker-alt"></a></p>
+                    
+                </div>
+
+                <!-- CONTACT -->
+                <div class="contact">
+                    <h3 class="contact__title title">Contact</h3>
+                    <p class="contact__text">010 7659 7557</p>
+                    
+                </div>
+
+                
+                <!-- SOCIALS -->
+                <div class="socials">
+                    <a href="http://instagram.com/thirty_juju" class="socials__link fab fa-instagram socials__icon socials__icon-instagram">
+                        <i class=""></i>
+                    </a>
+                    <a href="https://m.place.naver.com/place/1236048581/home" class="socials__link fab fa-naver">
+                        N
+                    </a>
+                </div>
+            </main>
+
+            
         </div>
 
         <script src="./open-hours.js"></script>
         <script>
             const hours = {
-              "Monday":     { start: 1000, end: 1800 },
-              "Tuesday":    { start: 1400, end: 1430 },
-              "Wednesday":  { start: 1100, end: 1900 },
-              "Thursday":   { start: 1300, end: 1800 },
-              "Friday":     { start: 1000, end: 1700 },
-              "Saturday":   { start: 900, end: 1700 },
+              "Monday":     { start: 1000, end: 2100 },
+              "Tuesday":    { start: 1000, end: 2100 },
+              "Wednesday":  { start: 1000, end: 2100 },
+              "Thursday":   { start: 1000, end: 2100 },
+              "Friday":     { start: 1000, end: 2100 },
+              "Saturday":   { start: 1000, end: 1800 },
               "Sunday":     {}
             }
         
