@@ -4,14 +4,46 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200&display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200&family=Montserrat:wght@100&family=Open+Sans:wght@700&family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         
         <title>Thirty Beauty &mdash; Waxing & Eyelashes</title>
     </head>
     <body>
-        <div id="open-hours"></div>
+        
+        <!-- HEADER -->
+        <header class="header">
+            <div class="container">
+                <nav class="navbar">
+                    <a class="navbar__brand" href="#">Thirty Beauty</a>
+                    <ul class="navbar__list">
+                        <li class="navbar__link">Hours</li>
+                        <li class="navbar__link">Location</li>
+                        <li class="navbar__link">Contact</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="container">
+            <!-- SOCIALS -->
+            <div class="socials">
+                <a href="http://instagram.com/thirty_juju" class="socials__link fab fa-instagram socials__icon socials__icon-instagram">
+                    <i class=""></i>
+                </a>
+                <a href="https://m.place.naver.com/place/1236048581/home" class="socials__link fab fa-naver">
+                    N
+                </a>
+            </div>
+            <!-- HOURS -->
+            <div id="open-hours"></div>
+        </div>
+
         <script src="./open-hours.js"></script>
         <script>
             const hours = {

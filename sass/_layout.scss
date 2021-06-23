@@ -1,0 +1,13 @@
+.container  {
+  max-width: 120rem;
+  margin:0 auto;
+  background-color: var(--color-grey-light-1);
+  box-shadow: var(--shadow-dark);
+  min-height: 50rem;
+}
+
+.header {
+  background-color: var(--color-black);
+  width: 100vw;
+  height: 8rem;
+}

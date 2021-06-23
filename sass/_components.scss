@@ -1,0 +1,95 @@
+/////////////////////////////////////
+// NAVBAR
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  
+  @media only screen and (max-width: 600px){
+    justify-content: center;
+
+  }
+
+  &__brand {
+    text-decoration: none;
+    font-size: 3rem;
+    color: var(--color-primary);
+    font-family: Martel;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+
+    @media only screen and (max-width: 600px){
+      display: none;
+    }
+  }
+
+  &__link {
+    color: var(--color-white);
+    font-size: 1.8rem;
+    font-family: "Montserrat";
+    margin: 0 1rem;
+    transition: all .5s;
+
+    /* Fade in */
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 0.1em;
+      background-color: var(--color-primary-dark);
+      opacity: 0;
+      transition: opacity .5s;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      opacity: 1;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+/////////////////////////////////////
+// SOCIALS
+.socials {
+  position: fixed;
+  right: 50%;
+  bottom: 0;
+  transform: translateX(50%);
+}
+
+.fab {
+  font-size: 2rem;
+  padding: 1rem;
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+  margin: .7rem 5px;
+  border-radius: 50%;
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.fab:hover {
+  opacity: 0.7;
+}
+
+.fa-instagram {
+  background-image:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+.fa-naver {
+  font-family: "Work Sans";
+  background-image:linear-gradient( #00D337, #00C73C);
+}
