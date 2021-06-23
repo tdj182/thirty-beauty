@@ -37,6 +37,13 @@ Grey dark 3: #999
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  html ::-moz-selection {
+    /* Code for Firefox */
+    color: black;
+    background: var(--color-primary-light); }
+  html ::selection {
+    color: black;
+    background: var(--color-primary-light); }
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -45,6 +52,7 @@ body {
   background-image: url(../img/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   min-height: 100vh; }
 
 .container {
@@ -74,6 +82,10 @@ body {
   background-color: var(--section-background-color);
   z-index: -1; }
 
+.services {
+  position: relative;
+  width: 100%; }
+
 .title {
   font-size: 4rem;
   color: var(--color-white);
@@ -87,19 +99,25 @@ body {
   height: 8rem; }
   @media only screen and (max-width: 600px) {
     .navbar {
-      justify-content: center; } }
+      justify-content: center;
+      flex-direction: column; } }
   .navbar__brand {
     text-decoration: none;
     font-size: 3rem;
     color: var(--color-primary);
     font-family: Martel;
-    margin: 0 1rem; }
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: .5rem; }
+    .navbar__brand-subheading {
+      font-size: 1.7rem; }
   .navbar__list {
     list-style: none;
     display: flex; }
-    @media only screen and (max-width: 600px) {
-      .navbar__list {
-        display: none; } }
   .navbar__link {
     color: var(--color-white);
     font-size: 1.8rem;
@@ -126,6 +144,18 @@ body {
     .navbar__link:hover {
       transform: scale(1.2);
       cursor: pointer; }
+
+.services-img {
+  max-width: 80%;
+  min-width: 350px;
+  min-height: 500px;
+  max-height: 90vh;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%); }
+
+.hide {
+  display: none; }
 
 .hours {
   margin: 1rem;
@@ -169,10 +199,11 @@ tr:first-child {
   margin: .7rem 5px;
   border-radius: 50%;
   color: var(--color-white);
-  text-decoration: none; }
+  text-decoration: none;
+  transition: transform .3s; }
 
-.fab:hover {
-  opacity: 0.7; }
+.fab:hover, fas:hover {
+  transform: translateY(-5px); }
 
 .fa-instagram {
   background-image: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d); }

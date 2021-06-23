@@ -44,6 +44,14 @@ Grey dark 3: #999
 html {
   box-sizing: border-box;
   font-size: 62.5%; //1rem = 10px
+  ::-moz-selection { /* Code for Firefox */
+    color: black;
+    background: var(--color-primary-light);
+  }
+  ::selection {
+    color: black;
+    background: var(--color-primary-light);
+  }
 }
 
 body {
@@ -53,5 +61,6 @@ body {
   background-image: url(../img/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   min-height: 100vh;
 }

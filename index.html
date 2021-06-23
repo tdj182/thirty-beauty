@@ -5,9 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-        <!-- <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200&display=swap" rel="stylesheet"> -->
         <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200&family=Montserrat:wght@100&family=Open+Sans:wght@700&family=Work+Sans:wght@700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <link rel="stylesheet" href="css/style.css">
@@ -21,21 +18,31 @@
         <header class="header">
             <div class="container">
                 <nav class="navbar">
-                    <a class="navbar__brand" href="#">Thirty Beauty</a>
+                    <div class="navbar__brand"  onclick="hideServices()">
+                        <!-- <img class="navbar__brand-logo" src="./img/logo.PNG" alt="">  -->
+                        Thirty Beauty
+                        <span class="navbar__brand-subheading">Waxing & Eyelashes</span>
+                    </div>
                     <ul class="navbar__list">
-                        <li class="navbar__link">Hours</li>
-                        <li class="navbar__link"> <a href="https://m.place.naver.com/place/1236048581/location?subtab=location">Location</a></li>
-                        <li class="navbar__link">Contact</li>
+                        <li class="navbar__link navbar__link-services" onclick="showServices()">Services</li>
+                        <li class="navbar__link navbar__link-location"> <a href="https://m.place.naver.com/place/1236048581/location?subtab=location">Location</a></li>
+                        <!-- <li class="navbar__link">Contact</li> -->
                     </ul>
                 </nav>
             </div>
         </header>
 
         <div class="background-cover"></div>
+        
 
-        <div class="container">
 
+        <div class="container" onclick="hideServices()">
+            <!-- SERVICES -->
+            <div class="services">
+                <img src="./img/services.jpg" alt="" class="services-img">
+            </div>
             <main class="main">
+
                 <!-- HOURS -->
                 <div id="open-hours" class="hours">
                     <h3 class="hours__title title">Hours</h3>
@@ -66,8 +73,6 @@
                     </a>
                 </div>
             </main>
-
-            
         </div>
 
         <script src="./open-hours.js"></script>
