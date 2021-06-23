@@ -166,6 +166,7 @@ body {
 
 table {
   padding: var(--component-padding);
+  padding-top: 0;
   color: var(--color-primary-light);
   font-size: 1.5rem;
   border-spacing: 15px; }
